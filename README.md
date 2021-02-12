@@ -1,6 +1,7 @@
 # LocalStorage
 ----------------------
-For this Example, It will refresh 2 times.
+
+## For this Example, It will refresh 2 times.
 
 1- After login
 2- After log out
