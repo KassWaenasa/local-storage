@@ -1,4 +1,17 @@
 # LocalStorage
+----------------------
+For this Example, It will refresh 2 times.
+
+1- After login
+2- After log out
+
+for me, I think acceptable. 
+but it has many ways to do it.
+I just do an example of how to store data after logged in 
+and will clear all user data after logged out.
+
+Good luck, Cheers
+----------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 

@@ -1,0 +1,14 @@
+<nav>
+    <ul>
+        <li>loggedIn::{{loggedIn}}</li>
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/aboutus" routerLinkActive="active">About us</a></li>
+        <ng-container *ngIf="!loggedIn">
+            <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+        </ng-container>
+        <ng-container *ngIf="loggedIn">
+            <li><span class="user">Welcome {{userName}}&nbsp;|</span>&nbsp;<a routerLink="/myaccount" routerLinkActive="active">Myaccount</a></li>
+            <li><a (click)="logout()">logout</a></li>
+        </ng-container>
+    </ul>
+</nav>

@@ -1,0 +1,23 @@
+<div class="grid">
+
+    <label>firstName</label>
+    <div>{{this.userLocal.data.firstName}}</div>
+
+    <label>lastName</label>
+    <div>{{this.userLocal.data.lastName}}</div>
+
+    <label>gender</label>
+    <div>{{this.userLocal.data.gender}}</div>
+
+    <label>age</label>
+    <div>{{this.userLocal.data.age}}</div>
+
+    <label>address</label>
+    <div class="addr">
+        streetAddress: {{this.userLocal.data.address.streetAddress}}, city: {{this.userLocal.data.address.city}}, state: {{this.userLocal.data.address.state}}, postalCode: {{this.userLocal.data.address.postalCode}}<br> phoneNumbers
+        <br> home: {{this.userLocal.data.phoneNumbers[0].number}}<br> mobile: {{this.userLocal.data.phoneNumbers[1].number}}
+
+
+    </div>
+
+</div>

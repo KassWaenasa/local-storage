@@ -1,0 +1,40 @@
+<div>
+    <form>
+        <div>
+            <small class="err" [ngClass]="isErr ? 'show' : 'hide'">User name and Password invalid</small>
+        </div>
+        <div>
+            <label for="">UserName :</label>
+            <input [ngClass]="isErr ? 'err' : ''" type="text" (input)="userName = $event.target.value">
+        </div>
+        <div>
+            <label for="">PassWord :</label>
+            <input [ngClass]="isErr ? 'err' : ''" type="text" type="password" (input)="passWord = $event.target.value">
+        </div>
+        <div class="btn">
+            <button (click)="login()">LOGIN</button>
+        </div>
+    </form>
+    <hr>
+    <div>
+        <p>
+            userName :: {{userName}}
+        </p>
+        <p>
+            passWord :: {{passWord}}
+        </p>
+    </div>
+    <hr>
+    <div>
+        <p>
+            userName: Rack | passWord: Rack@Jackon
+        </p>
+        <p>
+            userName: John | passWord: John@Doh
+        </p>
+        <p>
+            userName: San | passWord: San@Smith
+        </p>
+    </div>
+
+</div>

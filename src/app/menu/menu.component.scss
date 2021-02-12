@@ -1,0 +1,25 @@
+nav {
+    background: #3c89c5;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    li {
+        padding: 1em;
+        .user {
+            color: #FFF;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+a.active,
+a:hover {
+    color: #000;
+}
